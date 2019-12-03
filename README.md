@@ -38,13 +38,12 @@ be done, either run your own Jupyter notebook server locally by issuing the
 `jupyter notebook` in a shell or launch [a fully working online example on
 binder](https://mybinder.org/v2/gh/signetlabdei/sem-example/master?filepath=Analysis.ipynb).
 
-## The analysis script ##
-
-Once your experimentation is done and you have identified a couple of plots that
-you would be interested in showing, you typically want to automatize your
-analysis by moving it into its own Python script, which will
-
-## Saving results and pulling them in from LaTeX ##
+<!-- TODO -->
+<!-- ## The analysis script ## -->
+<!-- Once your experimentation is done and you have identified a couple of plots that -->
+<!-- you would be interested in showing, you typically want to automatize your -->
+<!-- analysis by moving it into its own Python script, which will -->
+<!-- ## Saving results and pulling them in from LaTeX ## -->
 
 # Kickstarting your own ns-3 simulation campaign #
 
