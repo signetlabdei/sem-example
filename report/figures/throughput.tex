@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+  \begin{axis}[
+    xlabel={Distance [m]},
+    ylabel={Throughput [Mbit/s]},
+    legend entries={
+      MCS = 0,
+      MCS = 2,
+      MCS = 4,
+      MCS = 6,
+    }
+    ]
+    \addplot[black, solid, mark=o] table[x index=0, y index=1] {figures/data/throughput.txt};
+    \addplot[black, solid, mark=diamond] table[x index=0, y index=2] {figures/data/throughput.txt};
+    \addplot[black, solid, mark=square] table[x index=0, y index=3] {figures/data/throughput.txt};
+    \addplot[black, solid, mark=x] table[x index=0, y index=4] {figures/data/throughput.txt};
+  \end{axis}
+\end{tikzpicture}
