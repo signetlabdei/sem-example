@@ -15,14 +15,25 @@ git clone --recurse-submodules https://github.com/signetlabdei/sem-example
 
 # The SEM workflow #
 
+---
+
+**NOTE**
+
+This section describes the contents of this repo. If you want a step-by-step
+guide on how to initialize your own SEM project, follow [this
+section](#Kickstarting-your-own-ns-3-simulation-campaign).
+
+---
+
 The file structure you see in this repo is meant to provide a reference on how
-to structure your SEM projects. What you see here is very similar to what you
-can expect to end up with when analyzing your very own ns-3 simulations using
-SEM: an ns-3 installation in the `ns-3` folder, a `results` folder containing
-the outcomes of the simulations you ran through SEM, a set of tools to inspect
-what your simulation is doing in the `visualization` folder, a script to obtain
-and plot some results called `analysis.py`, and a report showing the results of
-your analysis in the `report` folder.
+to structure your SEM projects, and explain its components before you go on and
+create your own. What you see here is very similar to what you can expect to end
+up with when analyzing your very own ns-3 simulations using SEM: an ns-3
+installation in the `ns-3` folder, a `results` folder containing the outcomes of
+the simulations you ran through SEM, a set of tools to inspect what your
+simulation is doing in the `visualization` folder, a script to obtain and plot
+some results called `analysis.py`, and a report showing the results of your
+analysis in the `report` folder.
 
 ## The ns-3 submodule ##
 
@@ -38,12 +49,18 @@ be done, either run your own Jupyter notebook server locally by issuing the
 `jupyter notebook` in a shell or launch [a fully working online example on
 binder](https://mybinder.org/v2/gh/signetlabdei/sem-example/master?filepath=Analysis.ipynb).
 
-<!-- TODO -->
-<!-- ## The analysis script ## -->
-<!-- Once your experimentation is done and you have identified a couple of plots that -->
-<!-- you would be interested in showing, you typically want to automatize your -->
-<!-- analysis by moving it into its own Python script, which will -->
-<!-- ## Saving results and pulling them in from LaTeX ## -->
+## The analysis script ##
+
+Jupyter notebooks can be handy for interactive sessions and for looking at your
+simulation results, however some users prefer more streamlined and REPL-based
+development. Check out the `analysis.py` file to get an idea of this workflow:
+the main steps to obtain results are the same as in the Jupyter notebook
+example, but this file also shows how to save the parsed data in external files.
+
+## Saving results and pulling them in from LaTeX ##
+
+Inside the `report` folder you can find an example of a simple LaTeX report
+containing figures generated from data output by the `analysis.py` SEM script.
 
 # Kickstarting your own ns-3 simulation campaign #
 
